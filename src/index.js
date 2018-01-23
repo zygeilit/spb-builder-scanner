@@ -1,10 +1,8 @@
-
 var acorn = require('acorn')
 var objass = require('object-assign')
 
 // 不同维度的信息提取的实现，对应到某一个文件
 var fnSignatureGetter = require('./sca-fn-signature-getter') // 函数签名
-var propertiesGetter = require('./sca-properties-getter') // 组件属性列表
 
 // 初始化配置acorn
 require('acorn-jsx/inject')(acorn) // 支持 React JSX 语法
@@ -24,7 +22,8 @@ module.exports = function scan(jsContentText, options) {
     'plugins': { jsx: true }
   }))
 
-  fnSignatureGetter(ast)
+  var meta_sig = fnSignatureGetter(ast)
+  console.log(JSON.stringify(meta_sig, null, 2))
 
   return {
     'ast': ast
