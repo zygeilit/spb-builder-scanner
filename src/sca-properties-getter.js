@@ -7,7 +7,7 @@ var path = require('path')
 require('acorn-jsx/inject')(acorn)
 require('acorn-es7-plugin')(acorn)
 
-var domeFilePath = path.join(__dirname, '..', '/react-todos/js/todoItem.js')
+var domeFilePath = path.join(__dirname, '/demo-react-todos/js/todoItem.js')
 
 var jsDomeFileContent = fs.readFileSync(domeFilePath, { encoding: 'utf8' })
 
@@ -18,7 +18,7 @@ var ast = acorn.parse(jsDomeFileContent, {
   'plugins': { jsx: true }
 })
 
-// fs.writeFile(path.join(__dirname, '..', 'ast-react-cmp.json'), JSON.stringify(ast, null, 2))
+// fs.writeFile(path.join(__dirname, 'ast-react-cmp.json'), JSON.stringify(ast, null, 2))
 
 walk.findNodeAt(ast, null, null,
   function (nodeType, node) {
