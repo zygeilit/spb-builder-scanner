@@ -1,6 +1,6 @@
 var fs = require('fs')
 var path = require('path')
-var scan = require('../src/index.js')
+var scan = require('../lib/index.js')
 
 var domeFilePath = path.join(__dirname, '/todos/js/todoItem.js')
 var jsDomeFileContent = fs.readFileSync(domeFilePath, { encoding: 'utf8' })
