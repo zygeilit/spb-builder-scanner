@@ -12,17 +12,14 @@ export default ({ types: t }) => {
               let { value, ...rest_node } = objProp.node
               let { body, ...rest_value } = value
 
-              let node = Object.assign({}, objProp.node, { value: {} })
-              let value = Object.assign({}, objProp.get('value').node, { body: [] })
-
               console.log(
                 JSON.stringify({
                   ...rest_node,
-                  {
+                  value: {
                     ...rest_value,
                     body: []
                   }
-                },null, 2)
+                }, null, 2)
               )
 
             })
