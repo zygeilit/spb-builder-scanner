@@ -12,9 +12,8 @@ module.exports = function (ast) {
         if (type === 'MemberExpression' && object.name === 'React' && property.name === 'createClass') {
           let [{ properties }] = node.arguments
           for (var i = 0; i < properties.length; i++) {
-            cmpPropNames.push(
-              gen_signature_metadata(properties[i])
-            )
+            var meta = gen_signature_metadata(properties[i])
+            var { body } = properties[i].value
           }
         }
       }
@@ -45,30 +44,8 @@ function gen_signature_metadata (property) {
       type: val_type,
       params: val_params,
       generator,
-      expression
+      expression,
+      body: {} // 属性内部细节
     }
   }
 }
-
-// DEMO
-// {
-//   "key": {
-//     "type": "Identifier",
-//     "name": "shouldComponentUpdate"
-//   },
-//   "value": {
-//     "type": "FunctionExpression",
-//     "params": [
-//       {
-//         "type": "Identifier",
-//         "name": "nextProps"
-//       },
-//       {
-//         "type": "Identifier",
-//         "name": "nextState"
-//       }
-//     ],
-//     "generator": false,
-//     "expression": false
-//   }
-// }
