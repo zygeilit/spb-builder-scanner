@@ -1,7 +1,6 @@
-import fs from 'fs'
-import path1 from 'path'
 import traverse from 'babel-traverse'
-import astRegenerator from './generator'
+import generator, { findAstBySyntaxs } from './ast-generator'
+import ouput from './output-file'
 
 export default ({ types: t }) => {
   return {
@@ -12,26 +11,24 @@ export default ({ types: t }) => {
           if(callee.get('object').isIdentifier({ name: 'React' }) && callee.get('property').isIdentifier({ name: 'createClass' })) {
             let objProp = path.get('arguments.0').get('properties').forEach(objProp => {
 
-              let ast1 = astRegenerator(objProp.node)
-              // ast1.value.body = []
+              // 去掉value中的body
+              let { value, ...rest_node } = objProp.node
+              let { body, ...rest_value } = value
 
-              fs.writeFile(
-                path1.join(__dirname, '..', 'test',`api/.${ast1.key.name}.json`),
-                JSON.stringify(ast1, null, 2), 'utf-8'
-              )
+              let res = findAstBySyntaxs(objProp.node, [ 'this.state', 'this.setState()' ])
 
-              // let { value, ...rest_node } = objProp.node
-              // let { body, ...rest_value } = value
+              let cmpApiAstJson = generator({
+                ...rest_node,
+                value: {
+                  ...rest_value,
+                  body
+                }
+              })
 
-              // console.log(
-              //   JSON.stringify({
-              //     ...rest_node,
-              //     value: {
-              //       ...rest_value,
-              //       body: []
-              //     }
-              //   }, null, 2)
-              // )
+              ouput(`body/.${cmpApiAstJson.key.name}.json`, res)
+
+              // 输出测试文件
+              ouput(`api/.${cmpApiAstJson.key.name}.json`, cmpApiAstJson)
 
             })
           }

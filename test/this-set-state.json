@@ -1,0 +1,34 @@
+[
+  {
+    "type": "ExpressionStatement",
+    "expression": {
+      "type": "MemberExpression",
+      "object": {
+        "type": "ThisExpression"
+      },
+      "property": {
+        "type": "Identifier",
+        "name": "state"
+      },
+      "computed": false
+    }
+  },
+  {
+    "type": "ExpressionStatement",
+    "expression": {
+      "type": "CallExpression",
+      "callee": {
+        "type": "MemberExpression",
+        "object": {
+          "type": "ThisExpression"
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "setState"
+        },
+        "computed": false
+      },
+      "arguments": []
+    }
+  }
+]
