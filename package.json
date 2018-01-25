@@ -2,10 +2,10 @@
   "name": "spb-builder-scanner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "demo": "node demo/index.js",
-    "build:lib": "babel src --out-dir lib --watch"
+    "build:lib": "rm -rf lib/* && babel src --out-dir lib --watch"
   },
   "repository": {
     "type": "git",
