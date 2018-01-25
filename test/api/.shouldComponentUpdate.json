@@ -22,131 +22,26 @@
         "name": "nextState"
       }
     ],
-    "body": {
-      "type": "BlockStatement",
-      "body": [
-        {
-          "type": "ReturnStatement",
-          "argument": {
-            "type": "LogicalExpression",
-            "left": {
-              "type": "LogicalExpression",
-              "left": {
-                "type": "BinaryExpression",
-                "left": {
-                  "type": "MemberExpression",
-                  "object": {
-                    "type": "Identifier",
-                    "name": "nextProps"
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "todo"
-                  },
-                  "computed": false
-                },
-                "operator": "!==",
-                "right": {
-                  "type": "MemberExpression",
-                  "object": {
-                    "type": "MemberExpression",
-                    "object": {
-                      "type": "ThisExpression"
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "props"
-                    },
-                    "computed": false
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "todo"
-                  },
-                  "computed": false
-                }
-              },
-              "operator": "||",
-              "right": {
-                "type": "BinaryExpression",
-                "left": {
-                  "type": "MemberExpression",
-                  "object": {
-                    "type": "Identifier",
-                    "name": "nextProps"
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "editing"
-                  },
-                  "computed": false
-                },
-                "operator": "!==",
-                "right": {
-                  "type": "MemberExpression",
-                  "object": {
-                    "type": "MemberExpression",
-                    "object": {
-                      "type": "ThisExpression"
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "props"
-                    },
-                    "computed": false
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "editing"
-                  },
-                  "computed": false
-                }
-              }
-            },
-            "operator": "||",
-            "right": {
-              "type": "BinaryExpression",
-              "left": {
-                "type": "MemberExpression",
-                "object": {
-                  "type": "Identifier",
-                  "name": "nextState"
-                },
-                "property": {
-                  "type": "Identifier",
-                  "name": "editText"
-                },
-                "computed": false
-              },
-              "operator": "!==",
-              "right": {
-                "type": "MemberExpression",
-                "object": {
-                  "type": "MemberExpression",
-                  "object": {
-                    "type": "ThisExpression"
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "state"
-                  },
-                  "computed": false
-                },
-                "property": {
-                  "type": "Identifier",
-                  "name": "editText"
-                },
-                "computed": false
-              }
-            },
-            "extra": {
-              "parenthesized": true,
-              "parenStart": 1096
-            }
-          }
-        }
-      ],
-      "directives": []
-    }
+    "body": [
+      {
+        "type": "MemberExpression",
+        "object": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ThisExpression"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "state"
+          },
+          "computed": false
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "editText"
+        },
+        "computed": false
+      }
+    ]
   }
 }

@@ -18,165 +18,26 @@
         "name": "event"
       }
     ],
-    "body": {
-      "type": "BlockStatement",
-      "body": [
-        {
-          "type": "VariableDeclaration",
-          "declarations": [
-            {
-              "type": "VariableDeclarator",
-              "init": {
-                "type": "CallExpression",
-                "callee": {
-                  "type": "MemberExpression",
-                  "object": {
-                    "type": "MemberExpression",
-                    "object": {
-                      "type": "MemberExpression",
-                      "object": {
-                        "type": "ThisExpression"
-                      },
-                      "property": {
-                        "type": "Identifier",
-                        "name": "state"
-                      },
-                      "computed": false
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "editText"
-                    },
-                    "computed": false
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "trim"
-                  },
-                  "computed": false
-                },
-                "arguments": []
-              }
-            }
-          ],
-          "kind": "var"
-        },
-        {
-          "type": "IfStatement",
-          "test": {
+    "body": [
+      {
+        "type": "MemberExpression",
+        "object": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ThisExpression"
+          },
+          "property": {
             "type": "Identifier",
-            "name": "val"
+            "name": "state"
           },
-          "consequent": {
-            "type": "BlockStatement",
-            "body": [
-              {
-                "type": "ExpressionStatement",
-                "expression": {
-                  "type": "CallExpression",
-                  "callee": {
-                    "type": "MemberExpression",
-                    "object": {
-                      "type": "MemberExpression",
-                      "object": {
-                        "type": "ThisExpression"
-                      },
-                      "property": {
-                        "type": "Identifier",
-                        "name": "props"
-                      },
-                      "computed": false
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "onSave"
-                    },
-                    "computed": false
-                  },
-                  "arguments": [
-                    {
-                      "type": "Identifier",
-                      "name": "val"
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "ExpressionStatement",
-                "expression": {
-                  "type": "CallExpression",
-                  "callee": {
-                    "type": "MemberExpression",
-                    "object": {
-                      "type": "ThisExpression"
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "setState"
-                    },
-                    "computed": false
-                  },
-                  "arguments": [
-                    {
-                      "type": "ObjectExpression",
-                      "properties": [
-                        {
-                          "type": "ObjectProperty",
-                          "method": false,
-                          "shorthand": false,
-                          "computed": false,
-                          "key": {
-                            "type": "Identifier",
-                            "name": "editText"
-                          },
-                          "value": {
-                            "type": "Identifier",
-                            "name": "val"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "directives": []
-          },
-          "alternate": {
-            "type": "BlockStatement",
-            "body": [
-              {
-                "type": "ExpressionStatement",
-                "expression": {
-                  "type": "CallExpression",
-                  "callee": {
-                    "type": "MemberExpression",
-                    "object": {
-                      "type": "MemberExpression",
-                      "object": {
-                        "type": "ThisExpression"
-                      },
-                      "property": {
-                        "type": "Identifier",
-                        "name": "props"
-                      },
-                      "computed": false
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "onDestroy"
-                    },
-                    "computed": false
-                  },
-                  "arguments": []
-                }
-              }
-            ],
-            "directives": []
-          }
-        }
-      ],
-      "directives": []
-    }
+          "computed": false
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "editText"
+        },
+        "computed": false
+      }
+    ]
   }
 }
