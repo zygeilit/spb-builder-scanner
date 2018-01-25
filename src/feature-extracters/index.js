@@ -1,4 +1,4 @@
 
 export default [
-  './lib/feature-extracters/react-create-class.js'
+  `${__dirname}/react-create-class.js`
 ]
