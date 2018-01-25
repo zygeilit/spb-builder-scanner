@@ -1,23 +1,38 @@
+import { transform } from 'babel-core'
+import ouput from './output-file'
 
 // AST节点上将被移除的的属性
 let ignoredProps = new Set([
   'start',
   'end',
   'loc',
-  'method',
-  'shorthand',
-  'computed',
-  'generator',
-  'expression',
-  'async',
-  'id'
+  'id',
+  'tokens',
+  'comments'
 ])
+
+export default (node, matchs = []) => {
+  // let matchs = [ 'this.state', 'this.setState' ]
+
+  let { ast } = transform('this.state', {
+    ast: true, // Include the AST in the returned object
+    babelrc: true, // Specify whether or not to use .babelrc and .babelignore files
+    plugins: [
+      './lib/extract-props.js'
+    ]
+  })
+
+  ouput('this-state.json', _ast_regenerator(ast))
+
+  let astJson = _ast_regenerator(node)
+  return astJson
+}
 
 /*
  格式化Babel.transform输出的AST对象到标准JSON对象
  通过ignoredProps对象的配置，删除AST对象中各个节点内的不必要属性
 */
-export default function _ast_regenerator (node) {
+function _ast_regenerator (node) {
 
   // 重新转换的AST纯JSON格式数据
   let regeneratedNode = {}

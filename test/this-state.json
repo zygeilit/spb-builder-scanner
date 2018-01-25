@@ -1,0 +1,24 @@
+{
+  "type": "File",
+  "program": {
+    "type": "Program",
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ThisExpression"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "state"
+          },
+          "computed": false
+        }
+      }
+    ],
+    "directives": []
+  }
+}

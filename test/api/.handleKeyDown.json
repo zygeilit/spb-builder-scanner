@@ -1,0 +1,202 @@
+{
+  "type": "ObjectProperty",
+  "method": false,
+  "shorthand": false,
+  "computed": false,
+  "key": {
+    "type": "Identifier",
+    "name": "handleKeyDown"
+  },
+  "value": {
+    "type": "FunctionExpression",
+    "generator": false,
+    "expression": false,
+    "async": false,
+    "params": [
+      {
+        "type": "Identifier",
+        "name": "event"
+      }
+    ],
+    "body": {
+      "type": "BlockStatement",
+      "body": [
+        {
+          "type": "IfStatement",
+          "test": {
+            "type": "BinaryExpression",
+            "left": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "event"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "which"
+              },
+              "computed": false
+            },
+            "operator": "===",
+            "right": {
+              "type": "Identifier",
+              "name": "ESCAPE_KEY"
+            }
+          },
+          "consequent": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "ThisExpression"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "setState"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "ObjectProperty",
+                          "method": false,
+                          "shorthand": false,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "name": "editText"
+                          },
+                          "value": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "ThisExpression"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "props"
+                                },
+                                "computed": false
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "todo"
+                              },
+                              "computed": false
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "title"
+                            },
+                            "computed": false
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "props"
+                      },
+                      "computed": false
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "onCancel"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "event"
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
+          "alternate": {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "event"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "which"
+                },
+                "computed": false
+              },
+              "operator": "===",
+              "right": {
+                "type": "Identifier",
+                "name": "ENTER_KEY"
+              }
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "handleSubmit"
+                      },
+                      "computed": false
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "event"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "directives": []
+            },
+            "alternate": null
+          }
+        }
+      ],
+      "directives": []
+    }
+  }
+}

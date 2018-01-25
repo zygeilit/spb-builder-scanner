@@ -1,0 +1,205 @@
+{
+  "type": "ObjectProperty",
+  "method": false,
+  "shorthand": false,
+  "computed": false,
+  "key": {
+    "type": "Identifier",
+    "name": "componentDidUpdate"
+  },
+  "value": {
+    "type": "FunctionExpression",
+    "generator": false,
+    "expression": false,
+    "async": false,
+    "params": [
+      {
+        "type": "Identifier",
+        "name": "prevProps"
+      }
+    ],
+    "body": {
+      "type": "BlockStatement",
+      "body": [
+        {
+          "type": "IfStatement",
+          "test": {
+            "type": "LogicalExpression",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "!",
+              "prefix": true,
+              "argument": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "prevProps"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "editing"
+                },
+                "computed": false
+              },
+              "extra": {
+                "parenthesizedArgument": false
+              }
+            },
+            "operator": "&&",
+            "right": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "ThisExpression"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "props"
+                },
+                "computed": false
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "editing"
+              },
+              "computed": false
+            }
+          },
+          "consequent": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "init": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "React"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "findDOMNode"
+                        },
+                        "computed": false
+                      },
+                      "arguments": [
+                        {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "refs"
+                            },
+                            "computed": false
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "editField"
+                          },
+                          "computed": false
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "kind": "var"
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "node"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "focus"
+                    },
+                    "computed": false
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "node"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "setSelectionRange"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "node"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "value"
+                        },
+                        "computed": false
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "length"
+                      },
+                      "computed": false
+                    },
+                    {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "node"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "value"
+                        },
+                        "computed": false
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "length"
+                      },
+                      "computed": false
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
+          "alternate": null
+        }
+      ],
+      "directives": []
+    }
+  }
+}

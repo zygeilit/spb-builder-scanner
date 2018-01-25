@@ -1,11 +1,17 @@
 {
   "type": "ObjectProperty",
+  "method": false,
+  "shorthand": false,
+  "computed": false,
   "key": {
     "type": "Identifier",
     "name": "render"
   },
   "value": {
     "type": "FunctionExpression",
+    "generator": false,
+    "expression": false,
+    "async": false,
     "params": [],
     "body": {
       "type": "BlockStatement",
@@ -23,7 +29,8 @@
               "property": {
                 "type": "Identifier",
                 "name": "createElement"
-              }
+              },
+              "computed": false
             },
             "arguments": [
               {
@@ -39,6 +46,9 @@
                 "properties": [
                   {
                     "type": "ObjectProperty",
+                    "method": false,
+                    "shorthand": false,
+                    "computed": false,
                     "key": {
                       "type": "Identifier",
                       "name": "className"
@@ -55,6 +65,9 @@
                           "properties": [
                             {
                               "type": "ObjectProperty",
+                              "method": false,
+                              "shorthand": false,
+                              "computed": false,
                               "key": {
                                 "type": "Identifier",
                                 "name": "completed"
@@ -71,21 +84,27 @@
                                     "property": {
                                       "type": "Identifier",
                                       "name": "props"
-                                    }
+                                    },
+                                    "computed": false
                                   },
                                   "property": {
                                     "type": "Identifier",
                                     "name": "todo"
-                                  }
+                                  },
+                                  "computed": false
                                 },
                                 "property": {
                                   "type": "Identifier",
                                   "name": "completed"
-                                }
+                                },
+                                "computed": false
                               }
                             },
                             {
                               "type": "ObjectProperty",
+                              "method": false,
+                              "shorthand": false,
+                              "computed": false,
                               "key": {
                                 "type": "Identifier",
                                 "name": "editing"
@@ -100,12 +119,14 @@
                                   "property": {
                                     "type": "Identifier",
                                     "name": "props"
-                                  }
+                                  },
+                                  "computed": false
                                 },
                                 "property": {
                                   "type": "Identifier",
                                   "name": "editing"
-                                }
+                                },
+                                "computed": false
                               }
                             }
                           ]
@@ -129,7 +150,8 @@
                       "property": {
                         "type": "Identifier",
                         "name": "createElement"
-                      }
+                      },
+                      "computed": false
                     },
                     "arguments": [
                       {
@@ -145,6 +167,9 @@
                         "properties": [
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "className"
@@ -174,7 +199,8 @@
                               "property": {
                                 "type": "Identifier",
                                 "name": "createElement"
-                              }
+                              },
+                              "computed": false
                             },
                             "arguments": [
                               {
@@ -190,6 +216,9 @@
                                 "properties": [
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "className"
@@ -205,6 +234,9 @@
                                   },
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "type"
@@ -220,6 +252,9 @@
                                   },
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "checked"
@@ -236,21 +271,27 @@
                                           "property": {
                                             "type": "Identifier",
                                             "name": "props"
-                                          }
+                                          },
+                                          "computed": false
                                         },
                                         "property": {
                                           "type": "Identifier",
                                           "name": "todo"
-                                        }
+                                        },
+                                        "computed": false
                                       },
                                       "property": {
                                         "type": "Identifier",
                                         "name": "completed"
-                                      }
+                                      },
+                                      "computed": false
                                     }
                                   },
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "onChange"
@@ -265,12 +306,14 @@
                                         "property": {
                                           "type": "Identifier",
                                           "name": "props"
-                                        }
+                                        },
+                                        "computed": false
                                       },
                                       "property": {
                                         "type": "Identifier",
                                         "name": "onToggle"
-                                      }
+                                      },
+                                      "computed": false
                                     }
                                   }
                                 ]
@@ -288,7 +331,8 @@
                               "property": {
                                 "type": "Identifier",
                                 "name": "createElement"
-                              }
+                              },
+                              "computed": false
                             },
                             "arguments": [
                               {
@@ -304,6 +348,9 @@
                                 "properties": [
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "onDoubleClick"
@@ -316,7 +363,8 @@
                                       "property": {
                                         "type": "Identifier",
                                         "name": "handleEdit"
-                                      }
+                                      },
+                                      "computed": false
                                     }
                                   }
                                 ]
@@ -333,17 +381,20 @@
                                     "property": {
                                       "type": "Identifier",
                                       "name": "props"
-                                    }
+                                    },
+                                    "computed": false
                                   },
                                   "property": {
                                     "type": "Identifier",
                                     "name": "todo"
-                                  }
+                                  },
+                                  "computed": false
                                 },
                                 "property": {
                                   "type": "Identifier",
                                   "name": "title"
-                                }
+                                },
+                                "computed": false
                               }
                             ]
                           },
@@ -358,7 +409,8 @@
                               "property": {
                                 "type": "Identifier",
                                 "name": "createElement"
-                              }
+                              },
+                              "computed": false
                             },
                             "arguments": [
                               {
@@ -374,6 +426,9 @@
                                 "properties": [
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "className"
@@ -389,6 +444,9 @@
                                   },
                                   {
                                     "type": "ObjectProperty",
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                       "type": "Identifier",
                                       "name": "onClick"
@@ -403,12 +461,14 @@
                                         "property": {
                                           "type": "Identifier",
                                           "name": "props"
-                                        }
+                                        },
+                                        "computed": false
                                       },
                                       "property": {
                                         "type": "Identifier",
                                         "name": "onDestroy"
-                                      }
+                                      },
+                                      "computed": false
                                     }
                                   }
                                 ]
@@ -430,7 +490,8 @@
                       "property": {
                         "type": "Identifier",
                         "name": "createElement"
-                      }
+                      },
+                      "computed": false
                     },
                     "arguments": [
                       {
@@ -446,6 +507,9 @@
                         "properties": [
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "ref"
@@ -461,6 +525,9 @@
                           },
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "className"
@@ -476,6 +543,9 @@
                           },
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "value"
@@ -490,16 +560,21 @@
                                 "property": {
                                   "type": "Identifier",
                                   "name": "state"
-                                }
+                                },
+                                "computed": false
                               },
                               "property": {
                                 "type": "Identifier",
                                 "name": "editText"
-                              }
+                              },
+                              "computed": false
                             }
                           },
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "onBlur"
@@ -512,11 +587,15 @@
                               "property": {
                                 "type": "Identifier",
                                 "name": "handleSubmit"
-                              }
+                              },
+                              "computed": false
                             }
                           },
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "onChange"
@@ -529,11 +608,15 @@
                               "property": {
                                 "type": "Identifier",
                                 "name": "handleChange"
-                              }
+                              },
+                              "computed": false
                             }
                           },
                           {
                             "type": "ObjectProperty",
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
                             "key": {
                               "type": "Identifier",
                               "name": "onKeyDown"
@@ -546,7 +629,8 @@
                               "property": {
                                 "type": "Identifier",
                                 "name": "handleKeyDown"
-                              }
+                              },
+                              "computed": false
                             }
                           }
                         ]
