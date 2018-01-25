@@ -39,10 +39,6 @@
     "babel-template": "^6.26.0",
     "babel-traverse": "^6.26.0",
     "babel-types": "^6.26.0",
-    "colors": "^1.1.2",
-    "diff": "^3.4.0",
-    "is-subset": "^0.1.1",
-    "jsonpath-plus": "^0.16.0",
-    "regenerator": "^0.12.3"
+    "jsonpath-plus": "^0.16.0"
   }
 }
