@@ -1,0 +1,565 @@
+{
+  "type": "ObjectProperty",
+  "key": {
+    "type": "Identifier",
+    "name": "render"
+  },
+  "value": {
+    "type": "FunctionExpression",
+    "params": [],
+    "body": {
+      "type": "BlockStatement",
+      "body": [
+        {
+          "type": "ReturnStatement",
+          "argument": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "React"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "createElement"
+              }
+            },
+            "arguments": [
+              {
+                "type": "StringLiteral",
+                "extra": {
+                  "rawValue": "li",
+                  "raw": "'li'"
+                },
+                "value": "li"
+              },
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "ObjectProperty",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "className"
+                    },
+                    "value": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "classNames"
+                      },
+                      "arguments": [
+                        {
+                          "type": "ObjectExpression",
+                          "properties": [
+                            {
+                              "type": "ObjectProperty",
+                              "key": {
+                                "type": "Identifier",
+                                "name": "completed"
+                              },
+                              "value": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "object": {
+                                      "type": "ThisExpression"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "props"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "todo"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "completed"
+                                }
+                              }
+                            },
+                            {
+                              "type": "ObjectProperty",
+                              "key": {
+                                "type": "Identifier",
+                                "name": "editing"
+                              },
+                              "value": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "ThisExpression"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "props"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "editing"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "createElement"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "StringLiteral",
+                        "extra": {
+                          "rawValue": "div",
+                          "raw": "'div'"
+                        },
+                        "value": "div"
+                      },
+                      {
+                        "type": "ObjectExpression",
+                        "properties": [
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "className"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "extra": {
+                                "rawValue": "view",
+                                "raw": "\"view\""
+                              },
+                              "value": "view"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ArrayExpression",
+                        "elements": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "React"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "createElement"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "StringLiteral",
+                                "extra": {
+                                  "rawValue": "input",
+                                  "raw": "'input'"
+                                },
+                                "value": "input"
+                              },
+                              {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "className"
+                                    },
+                                    "value": {
+                                      "type": "StringLiteral",
+                                      "extra": {
+                                        "rawValue": "toggle",
+                                        "raw": "\"toggle\""
+                                      },
+                                      "value": "toggle"
+                                    }
+                                  },
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "type"
+                                    },
+                                    "value": {
+                                      "type": "StringLiteral",
+                                      "extra": {
+                                        "rawValue": "checkbox",
+                                        "raw": "\"checkbox\""
+                                      },
+                                      "value": "checkbox"
+                                    }
+                                  },
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "checked"
+                                    },
+                                    "value": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "MemberExpression",
+                                        "object": {
+                                          "type": "MemberExpression",
+                                          "object": {
+                                            "type": "ThisExpression"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "props"
+                                          }
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "todo"
+                                        }
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "completed"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "onChange"
+                                    },
+                                    "value": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "MemberExpression",
+                                        "object": {
+                                          "type": "ThisExpression"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "props"
+                                        }
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "onToggle"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "React"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "createElement"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "StringLiteral",
+                                "extra": {
+                                  "rawValue": "label",
+                                  "raw": "'label'"
+                                },
+                                "value": "label"
+                              },
+                              {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "onDoubleClick"
+                                    },
+                                    "value": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "ThisExpression"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "handleEdit"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "object": {
+                                      "type": "ThisExpression"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "props"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "todo"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "title"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "React"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "createElement"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "StringLiteral",
+                                "extra": {
+                                  "rawValue": "button",
+                                  "raw": "'button'"
+                                },
+                                "value": "button"
+                              },
+                              {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "className"
+                                    },
+                                    "value": {
+                                      "type": "StringLiteral",
+                                      "extra": {
+                                        "rawValue": "destroy",
+                                        "raw": "\"destroy\""
+                                      },
+                                      "value": "destroy"
+                                    }
+                                  },
+                                  {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "onClick"
+                                    },
+                                    "value": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "MemberExpression",
+                                        "object": {
+                                          "type": "ThisExpression"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "props"
+                                        }
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "onDestroy"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "createElement"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "StringLiteral",
+                        "extra": {
+                          "rawValue": "input",
+                          "raw": "'input'"
+                        },
+                        "value": "input"
+                      },
+                      {
+                        "type": "ObjectExpression",
+                        "properties": [
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "ref"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "extra": {
+                                "rawValue": "editField",
+                                "raw": "\"editField\""
+                              },
+                              "value": "editField"
+                            }
+                          },
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "className"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "extra": {
+                                "rawValue": "edit",
+                                "raw": "\"edit\""
+                              },
+                              "value": "edit"
+                            }
+                          },
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "value"
+                            },
+                            "value": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "ThisExpression"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "state"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "editText"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "onBlur"
+                            },
+                            "value": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "ThisExpression"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "handleSubmit"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "onChange"
+                            },
+                            "value": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "ThisExpression"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "handleChange"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "onKeyDown"
+                            },
+                            "value": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "ThisExpression"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "handleKeyDown"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "directives": []
+    }
+  }
+}
