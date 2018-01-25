@@ -1,6 +1,6 @@
 import traverse from 'babel-traverse'
-import generator, { findAstBySyntaxs } from './ast-generator'
-import ouput from './output-file'
+import generator, { findAstBySyntaxs } from '../ast-generator'
+import ouput from '../output-file'
 
 export default ({ types: t }) => {
   return {

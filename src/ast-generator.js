@@ -2,9 +2,6 @@ import { transform } from 'babel-core'
 import jsonpath from 'jsonpath-plus'
 import parser from './parser'
 
-import { diffJson } from 'diff'
-import 'colors'
-
 // AST节点上将被移除的的属性
 let ignoredProps = new Set([
   'start',
@@ -71,6 +68,7 @@ export const findAstBySyntaxs = (node, includes = []) => {
 
     // 提取 ASTJSON 对象中的语法部分
     .map(syntax => {
+
       return jsonpath({
         // [data].program.body
         // 使用includes语法生成 ASTJSON 描述，包裹着 program 和 body 对象
@@ -85,7 +83,7 @@ export const findAstBySyntaxs = (node, includes = []) => {
     // 遍历 includes 中传入的语法, node上查找是否有相同节点
     .forEach(syntaxAstJson => {
       
-      // ...通过对象的方式find
+      // ...
 
     })
 

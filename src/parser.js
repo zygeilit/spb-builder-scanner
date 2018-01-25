@@ -1,4 +1,5 @@
 import { transform } from 'babel-core'
+import features from './feature-extracters'
 
 export default (content, opts = {}) => {
   return transform(
@@ -8,7 +9,7 @@ export default (content, opts = {}) => {
         ast: true, // Include the AST in the returned object
         babelrc: true, // Specify whether or not to use .babelrc and .babelignore files
         plugins: [
-          './lib/extract-props.js'
+          ...features  
         ]
       },
       opts
