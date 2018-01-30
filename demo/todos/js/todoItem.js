@@ -14,6 +14,10 @@ var app = app || {};
 	app.TodoItem = React.createClass({
 		handleSubmit: function (event) {
 			var val = this.state.editText.trim();
+			let { editText1 } = this.state
+			this.state['editText2']
+			var st = this.state
+			st.editText3
 			if (val) {
 				this.props.onSave(val);
 				this.setState({editText: val});

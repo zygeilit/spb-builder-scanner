@@ -18,6 +18,9 @@
         "name": "prevProps"
       }
     ],
-    "body": []
+    "body": {
+      "type": "BlockStatement",
+      "body": []
+    }
   }
 }

@@ -13,7 +13,10 @@ export default ({ types: t }) => {
 
               // 获取 this.state.[attrs]
               let syntaxs = {
-                'this.state.*': []
+                'this.state.*': [],
+                // 'this.setState(..*)': [],
+                // 'document.*': [],
+                // 'window.*': []
               }
 
               objProp.traverse({
@@ -36,19 +39,21 @@ export default ({ types: t }) => {
                 ...rest_node,
                 value: {
                   ...rest_value,
-                  body: syntaxs['this.state.*']
+                  body: {
+                    'type': 'BlockStatement',
+                    'body': syntaxs['this.state.*']
+                  }
                 }
               })
 
               // ouput(`body/.${cmpApiAstJson.key.name}.json`, res)
-
               // 输出测试文件
               ouput(`api/.${cmpApiAstJson.key.name}.json`, cmpApiAstJson)
 
             })
           }
         }
-      }// CallExpression
+      } // CallExpression
     }
   }
 }

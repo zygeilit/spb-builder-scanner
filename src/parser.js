@@ -2,8 +2,7 @@ import { transform } from 'babel-core'
 import features from './feature-extracters'
 
 export default (content, opts = {}) => {
-  return transform(
-    content,
+  return transform(content,
     Object.assign(
       {
         ast: true, // Include the AST in the returned object

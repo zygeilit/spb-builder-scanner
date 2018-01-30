@@ -22,26 +22,29 @@
         "name": "nextState"
       }
     ],
-    "body": [
-      {
-        "type": "MemberExpression",
-        "object": {
+    "body": {
+      "type": "BlockStatement",
+      "body": [
+        {
           "type": "MemberExpression",
           "object": {
-            "type": "ThisExpression"
+            "type": "MemberExpression",
+            "object": {
+              "type": "ThisExpression"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "state"
+            },
+            "computed": false
           },
           "property": {
             "type": "Identifier",
-            "name": "state"
+            "name": "editText"
           },
           "computed": false
-        },
-        "property": {
-          "type": "Identifier",
-          "name": "editText"
-        },
-        "computed": false
-      }
-    ]
+        }
+      ]
+    }
   }
 }

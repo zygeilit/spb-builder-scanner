@@ -13,6 +13,9 @@
     "expression": false,
     "async": false,
     "params": [],
-    "body": []
+    "body": {
+      "type": "BlockStatement",
+      "body": []
+    }
   }
 }

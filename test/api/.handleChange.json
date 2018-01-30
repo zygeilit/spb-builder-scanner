@@ -18,6 +18,9 @@
         "name": "event"
       }
     ],
-    "body": []
+    "body": {
+      "type": "BlockStatement",
+      "body": []
+    }
   }
 }
